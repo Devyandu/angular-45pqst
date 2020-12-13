@@ -15,6 +15,7 @@ import { ListOverviewExample } from "./app/list-overview-example";
 import { RootComponent } from "./app/root/root.component";
 import { BenefitsListComponent } from "./app/benefits-list/benefits-list.component";
 import { BenefitComponent } from "./app/benefit/benefit.component";
+import { AppRoutingModule } from "./app/app-routing.module";
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -28,7 +29,8 @@ import { BenefitComponent } from "./app/benefit/benefit.component";
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   entryComponents: [RootComponent],
   declarations: [

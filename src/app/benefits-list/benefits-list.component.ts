@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Benefit } from "../benefit";
+import { BenefitService } from "../benefit.service";
 
 @Component({
   selector: "app-benefits-list",
@@ -7,35 +8,10 @@ import { Benefit } from "../benefit";
   styleUrls: ["./benefits-list.component.css"]
 })
 export class BenefitsListComponent implements OnInit {
-  constructor() {}
+  constructor(public benefitService: BenefitService) {}
   benefits: Benefit[];
 
   ngOnInit() {
-    this.benefits = [
-      {
-        icon: "home",
-        name: "ovcopay",
-        title: "Office Visit Co-Pay",
-        value: "$25 per visit"
-      },
-      {
-        icon: "home",
-        name: "ovcopay",
-        title: "Office Visit Co-Pay",
-        value: "$25 per visit"
-      },
-      {
-        icon: "home",
-        name: "ovcopay",
-        title: "Office Visit Co-Pay",
-        value: "$25 per visit"
-      },
-      {
-        icon: "home",
-        name: "ovcopay",
-        title: "Office Visit Co-Pay",
-        value: "$25 per visit"
-      }
-    ];
+    this.benefits = this.benefitService.getBenefits();
   }
 }
