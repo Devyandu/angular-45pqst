@@ -13,25 +13,25 @@ export class BenefitsListComponent implements OnInit {
   ngOnInit() {
     this.benefits = [
       {
-        icon: "doctor",
+        icon: "home",
         name: "ovcopay",
         title: "Office Visit Co-Pay",
         value: "$25 per visit"
       },
       {
-        icon: "doctor",
+        icon: "home",
         name: "ovcopay",
         title: "Office Visit Co-Pay",
         value: "$25 per visit"
       },
       {
-        icon: "doctor",
+        icon: "home",
         name: "ovcopay",
         title: "Office Visit Co-Pay",
         value: "$25 per visit"
       },
       {
-        icon: "doctor",
+        icon: "home",
         name: "ovcopay",
         title: "Office Visit Co-Pay",
         value: "$25 per visit"

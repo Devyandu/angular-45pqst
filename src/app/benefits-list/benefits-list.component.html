@@ -1,8 +1,8 @@
 <mat-list role="list">
   <mat-list-item role="listitem" *ngFor="let benefit of benefits">
-    <mat-icon role="mat-list-item">home</mat-icon>
-    <h3 matLine>Heading</h3>
-    <p matLine>This is a longish description of whatever text is here</p>
+    <mat-icon role="mat-list-item">{{benefit.icon}}</mat-icon>
+    <h3 matLine>{{benefit.title}}</h3>
+    <p matLine>{{benefit.value}}</p>
     <mat-divider></mat-divider>
   </mat-list-item>
 </mat-list>
