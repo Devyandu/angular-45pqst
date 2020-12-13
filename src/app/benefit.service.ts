@@ -47,8 +47,10 @@ export class BenefitService {
     let x: undefined | Benefit = this.benefits.find(e => e.name === name);
 
     if (x === undefined) {
+      console.log("in undefined");
       return { name: "", title: "", icon: "", value: "" };
     } else {
+      console.log(x);
       return x;
     }
   }

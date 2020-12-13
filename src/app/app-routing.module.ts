@@ -11,7 +11,7 @@ const routes: Routes = [
     component: BenefitsListComponent
   },
   {
-    path: "benefit/:id",
+    path: "benefit/:name",
     component: BenefitComponent
   }
 ];
